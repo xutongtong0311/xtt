@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>构造函数</title>
+</head>
+<body>
+    <script>
+        //创建数组
+        // var arr1=[]
+        // var arr2=new Array()
+
+        // console.log(arr1)
+        // console.log(arr2)
+
+
+        // var obj1={}
+        // var obj2=new object()
+        
+        // console.log(obj1)
+        // console.log(obj2)
+
+
+        //自定义构造函数
+
+        // function Person(){
+
+        // }
+
+        // var p1=new Person()
+        // console.log(p1)
+
+        //原型
+
+        // function hello()
+        // {
+
+        // }
+        // console.log(hello.prototype)
+        // console.log(typeof  hello.prototype)
+
+
+        var arr=new Array()
+
+        //定义一个函数
+        function Person(name,age,sex){
+            this.name=name
+            this.sex=sex
+            this.age=age
+        }
+
+        Person.prototype.name="noname"
+        Person.prototype.age="0"
+        Person.prototype.sex="保密"
+
+        var p1 =new Person()
+        console.log(p1)
+        console.log(p1.name)
+        console.log(p1.age)
+        console.log(p1.sex)
+
+        var p2 =new Person()
+        console.log(p2)
+        console.log(p2.name)
+        console.log(p2.age)
+        console.log(p2.sex)
+
+        var p3 =new Person("zhangsan",11,"nan")
+        console.log(p3)
+    </script>
+</body>
+</html>
