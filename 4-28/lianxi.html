@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+        <button>D</button>
+        <button>E</button>
+    <script>
+        var o=document.getElementsByTagName("button")
+
+        var arr =Array.prototype.slice.call(o)
+        console.log(arr)
+
+        arr.forEach(function(v,k){
+            v.addEventListener("click",function(){
+                alert(k)
+            })
+        })
+        
+    </script>
+</body></html>
