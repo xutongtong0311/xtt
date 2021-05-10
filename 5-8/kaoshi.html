@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function func(n,o){
+        //     console.log(o)
+        //     return {
+        //         func:function(m){
+        //             return func(m,n);
+        //         }
+        //     };
+        // }
+
+        // var a =func(0);a.func(1);a.func(2);a.func(3);
+
+        // var name='cat';
+        // var obj={
+        //     name:'dog',
+        //     getName:function(){
+        //         this.name='mouse';
+        //         return (function(){
+        //             return this.name;
+        //         })();
+        //     }
+        // }
+
+        // console.log(obj.getName())
+
+        // var b;
+        // function fun(){
+        //     b="change";
+        // }
+        // console.log(b);
+        // fun();
+        // console.log(b)
+
+        // if(!("a" in window)){
+        //     var a=12
+        // }
+        // console.log(a)
+
+        // let a=111
+        // function f(a){
+        //     console.log(a)
+        //     a=222
+        //     console.log(a)
+        // }
+        // a=333
+        // console.log(a)
+        // f(a)
+
+        // var arr=[11,22,33,44]
+        // function f(...args){
+        //     console.log(args)
+        // }
+        // f(...arr)
+
+
+        // var add=function(){
+        //     return (function (){
+        //         var counter=0;
+        //         return (counter +=1);
+        //     }
+        //     )}();
+        //     add();
+        //     add();
+        //     console.log(add());
+
+        // function test(){
+        //     b();
+        //     var a=1;
+        //     function b(){
+        //         console.log(1);
+        //         console.log(a);
+        //         var a=2;
+        //     }
+        // }
+        // test();
+
+        // var animal="dog";
+        // function sayAnimal(){
+        //     animal="cat";
+        //     function animal(){}
+        //     console.log(animal.toString());
+        // }
+        // sayAnimal()
+
+        // console.log(Object.prototype._proto_)
+
+        // (function f(num){
+        //     console.log(num)
+        // })(111)
+
+        // function getFunc(){
+        //     var a=7;
+        //     return function(b){
+        //         alert(a+b);
+        //     }
+        // }
+        // var f=getFunc();
+        // f(5)
+
+
+        // function Person(){
+        //     this.age=20;
+        // }
+        // Person.protootype.age=30
+        // Person.prototype.getAge=function(){
+        //     return this.age;
+        // }
+
+        // var p=new Person();
+        // console.log(p.getAge())
+
+        // (function(){
+        //     var a=10;
+        //     if(a>5){
+        //         a=7;
+        //     }
+        //     alert(a)
+        // })();
+
+        // var fun =function(){
+        //     console.log(1);
+        // }
+        // function fun (){
+        //     console.log(2);
+        // }
+        
+        // fun();
+
+        (function(){
+            return typeof arguments;
+        })();
+    </script>
+</body>
+</html>
